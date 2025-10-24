@@ -1,4 +1,4 @@
-# Visualizador de Regresión Lineal
+# Visualizador de Regresion Lineal
 
 Un proyecto interactivo sencillo construido con *Kotlin (backend)* y *HTML/CSS/JavaScript (frontend)* que realiza *regresión lineal* a partir de puntos proporcionados por el usuario.  
 La aplicación visualiza la línea de mejor ajuste y muestra la fórmula de regresión correspondiente.
@@ -30,7 +30,7 @@ regresion-lineal-ui/
 
 ---
 
-## Cómo Funciona
+## Como Funciona
 
 ### 1. Frontend
 
@@ -66,26 +66,35 @@ El backend retorna \( m \) y \( b \) al frontend para renderizar la línea de re
 - *Kotlin* 1.9+  
 - *Gradle* (si se usa Kotlin como servicio o módulo backend)  
 - *Navegador* (Chrome/Firefox actualizados para pruebas de UI)  
-- *Opcional:* Node.js (para servir el frontend localmente)  
+- *Opcional:* Node.js (para servir el frontend localmente)
+- *JDK* 17.0.16
 
 ---
 
 ## Ejecutar el Proyecto
 
-### Opción 1: Ejecución Local del HTML
+### Opción 1: Ejecucion Local del HTML
 
 1. Abre la carpeta del proyecto.  
 2. Ubica index.html.  
 3. Haz doble clic o ábrelo en tu navegador.  
-4. Ahora puedes agregar puntos de forma interactiva y ver la línea de regresión.
+4. Ahora puedes agregar puntos de forma interactiva y ver la línea de regresion.
 
-### Opción 2: Backend en Kotlin
+### Opcion 2: Backend en Kotlin
 
 Si deseas que la lógica en Kotlin se ejecute dinámicamente (por ejemplo, mediante una API REST):
 
 1. Abre el proyecto Kotlin en *IntelliJ IDEA* o tu IDE preferido.  
 2. Compila y ejecuta LinearRegression.kt.  
 3. Ajusta script.js para obtener los resultados de regresión desde tu backend local (si aplica).  
+
+
+### Opcion 3: Consola
+1. Descargar el archivo .zip que se encuentra en la entrega del teams
+2. Guardar en alguna locacion.
+3. Estar en la ubicacion de la carpeta en la consola
+4. Correr el archivo con .\gradlew run  (ejemplo de la locacion PS C:\Users\Nicolas\downloads\regresion-lineal-ui> )
+5. Abrir en http://localhost:8085/
 
 ---
 
