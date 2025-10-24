@@ -1,4 +1,4 @@
-// app.js - interfaz mejorada sin tildes en el codigo
+// app.js - 
 const addPointBtn = document.getElementById("addPointBtn");
 const pasteCsvBtn = document.getElementById("pasteCsvBtn");
 const fileInput = document.getElementById("fileInput");
