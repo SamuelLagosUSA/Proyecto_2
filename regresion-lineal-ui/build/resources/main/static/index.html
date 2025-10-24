@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Regresion Lineal - Interfaz Mejorada</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Regresion Lineal</h1>
+      <p class="subtitle">Ingresa puntos, ajusta parametros y visualiza la linea:)</p>
+    </header>
+
+    <main>
+      <section class="left">
+        <div class="card">
+          <h3>Puntos de datos</h3>
+          <div id="points-list" class="points-list">
+            <!-- puntos generados aqui -->
+          </div>
+          <div class="controls">
+            <button id="addPointBtn" class="btn">Agregar punto</button>
+            <button id="pasteCsvBtn" class="btn">Pegar CSV</button>
+            <input type="file" id="fileInput" accept=".csv" class="file-input">
+          </div>
+          <div class="textarea-wrap">
+            <label for="csvArea">Area CSV (x,y por linea)</label>
+            <textarea id="csvArea" placeholder="1,2
+2,3.5
+3,5"></textarea>
+          </div>
+          <div class="actions">
+            <button id="calcBtn" class="btn primary">Calcular regresion</button>
+            <button id="clearBtn" class="btn outline">Limpiar todo</button>
+          </div>
+          <div id="error" class="error"></div>
+        </div>
+      </section>
+
+      <section class="right">
+        <div class="card">
+          <h3>Resultado</h3>
+          <div id="equation" class="equation">y = mx + b</div>
+          <canvas id="chart" height="300"></canvas>
+          <div class="export">
+            <button id="downloadCsvBtn" class="btn">Descargar puntos CSV</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Proyecto para segundo corte - Nico</small>
+    </footer>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
